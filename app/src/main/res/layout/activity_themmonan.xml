@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemmonanActivity">
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f20"
+        android:textSize="50sp"
+        android:textAllCaps="true"
+        android:text="Them mon an"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="Nhap ten mon an"
+        android:layout_below="@id/textviewTitle"
+        android:id="@+id/edittextTenmonan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="Nhap gia mon an"
+        android:layout_below="@id/edittextTenmonan"
+        android:id="@+id/edittextGiamonan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="Nhap dia chi"
+        android:layout_below="@id/edittextGiamonan"
+        android:id="@+id/edittextDiachimonan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/edittextDiachimonan"
+        android:text="Huy"
+        android:id="@+id/buttonHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/edittextDiachimonan"
+        android:text="Xac nhan"
+        android:id="@+id/buttonXacnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
