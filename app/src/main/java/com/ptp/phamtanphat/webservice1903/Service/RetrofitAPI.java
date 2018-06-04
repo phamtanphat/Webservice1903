@@ -5,5 +5,6 @@ public class RetrofitAPI {
 
     public static DataAPI getData(){
         return RetrofitInit.getclient(url).create(DataAPI.class);
+
     }
 }
