@@ -5,7 +5,10 @@ import com.ptp.phamtanphat.webservice1903.Monan;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface DataAPI {
@@ -17,4 +20,8 @@ public interface DataAPI {
     Call<String> onInsertMonan(@Query("Tenmonan") String tenmonan ,
                                @Query("Giamonan") String giamonan ,
                                @Query("Diachi") String diachi);
+
+    @FormUrlEncoded
+    @POST("delete.php")
+    Call<String> onDeleteMonan(@Field("Idmonan") Integer idmonan);
 }
