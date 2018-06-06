@@ -1,5 +1,6 @@
 package com.ptp.phamtanphat.webservice1903;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +46,8 @@ public class ThemmonanActivity extends AppCompatActivity {
                             String ketqua = response.body();
                             if (ketqua.equals("success")){
                                 Toast.makeText(ThemmonanActivity.this, "Them thanh cong!!", Toast.LENGTH_SHORT).show();
-                                finish();
+                                Intent intent = new Intent(ThemmonanActivity.this,MainActivity.class);
+                                startActivity(intent);
                             }else {
                                 Toast.makeText(ThemmonanActivity.this, "Loi!!", Toast.LENGTH_SHORT).show();
                             }
